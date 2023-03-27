@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Caveat&family=Electrolize&family=Geo&family=Gloria+Hallelujah&family=Indie+Flower&family=Luckiest+Guy&family=Nanum+Pen+Script&family=Pacifico&family=Press+Start+2P&family=Rubik+Iso&family=Russo+One&family=Shadows+Into+Light&family=VT323&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-aFq/bzH65dt+w6FI2ooMVUpc+21e0SRygnTpmBvdBgSdnuTN7QbdgL+OapgHtvPp" crossorigin="anonymous">
+    <link href="css/index.css" rel="stylesheet">
+</head>
+<body>
+    <h1><strong>SIMON</strong> SAYS</h1>
+    <h2>PRESS ANY KEY TO START A NEW GAME</h2>
+    <div id="btns_container">
+        <div id="btn_green" class="btn-container outline-green"><button class="mybtn bk-green"></button></div>
+        <div id="btn_red" class="btn-container outline-red"><button class="mybtn bk-red"></button></div>
+        <div id="btn_yellow" class="btn-container outline-yellow"><button class="mybtn bk-yellow"></button></div>
+        <div id="btn_blue" class="btn-container outline-blue"><button class="mybtn bk-blue"></button></div>
+    </div>
+    <footer>© 2023 oottonoandypi</footer>
+
+    <audio>
+        <source src="sound/green.mp3">
+        <source src="sound/red.mp3">
+        <source src="sound/yellow.mp3">
+        <source src="sound/blue.mp3">
+        <source src="sound/wrong.mp3">
+    </audio>
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js" integrity="sha256-oP6HI9z1XaZNBrJURtCoUT5SUnxFr8s3BzRl+cbzUq8=" crossorigin="anonymous"></script>
+    <script src="js/index.js"></script>
+</body>

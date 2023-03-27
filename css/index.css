@@ -1,0 +1,120 @@
+body{
+    background-color: rgb(23, 1, 50);
+    text-align: center;
+}
+
+h1{
+    font-family: 'Press Start 2P', cursive;
+    color: rgb(204, 93, 232);
+    padding: 32px 32px;
+    margin-top: 64px;
+    /* font-family: 'VT323', monospace; */
+}
+
+h1 strong{
+    position: relative;
+    font-size: larger;
+}
+
+h1 strong::after{
+    content:"";
+    position: absolute;
+    width: calc(120%);
+    height: 150%;
+    background-color: aquamarine;
+    z-index: -1;
+    transform: translate(-50%, -50%) rotate(-3.5deg);
+    left: 50%;
+    top: 50%;
+}
+
+h2{
+    font-family: 'Geo', sans-serif;
+    color: white;
+    padding: 16px 16px;
+}
+
+button{
+    border: none;
+}
+
+footer{
+    color: white;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    padding: 10px 10px;
+}
+
+#btns_container {
+    position: relative;
+    margin: 32px auto;
+    width: 22vw;
+    aspect-ratio: 1/1;
+    /*border-style: dashed;
+    border-color: white;
+    border-radius: 10px;*/
+}
+
+.bk-green{
+    background-color: green;
+    box-shadow: 0px 3px 8px rgb(81, 250, 43);
+}
+
+.bk-red{
+    background-color: red;
+    box-shadow: 0px 3px 8px rgb(255, 134, 134);
+}
+
+.bk-blue{
+    background-color: blue;
+    box-shadow: 0px 3px 8px rgb(134, 134, 255);
+}
+
+.bk-yellow{
+    background-color: yellow;
+    box-shadow: 0px 3px 8px rgb(234, 251, 0);
+}
+
+.btn-container{
+    width: 45%;
+    height: 45%;
+    border-style: solid;
+    border-color: rgb(115, 0, 255);
+    border-width: 2px;
+    float: left;
+    border-radius: 25px;
+    margin: 2.5%;
+    box-shadow: 0px 3px 12px rgba(255, 255, 255, 0.5);
+}
+
+.mybtn{
+    width: 92%;
+    height: 92%;
+    margin: 4% auto;
+    border-radius: 20px;
+    border-color: rgba(208, 177, 246, 0.437);
+    border-width: 1px;
+    border-style: solid;
+}
+
+.mybtn:hover{
+    animation-name: mybtn_pressed;
+    animation-duration: 0.2s;
+    width: 95%;
+    height: 95%;
+    margin: 2.5% auto;
+}
+
+@keyframes mybtn_pressed {
+    from {
+        width: 92%;
+        height: 92%;
+        margin: 4% auto;
+    }
+    to {
+        width: 95%;
+        height: 95%;
+        margin: 2.5% auto;
+    }
+  }
