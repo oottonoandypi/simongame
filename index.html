@@ -7,8 +7,8 @@
     <link href="css/index.css" rel="stylesheet">
 </head>
 <body>
-    <h1><strong>SIMON</strong> SAYS</h1>
-    <h2>PRESS ANY KEY TO START A NEW GAME</h2>
+    <h1 id="gameTitle"><strong>SIMON</strong> SAYS</h1>
+    <h2 id="gameLevel">PRESS ANY KEY TO START A NEW GAME</h2>
     <div id="btns_container">
         <div id="btn_green" class="btn-container outline-green"><button class="mybtn bk-green"></button></div>
         <div id="btn_red" class="btn-container outline-red"><button class="mybtn bk-red"></button></div>
@@ -17,13 +17,13 @@
     </div>
     <footer>© 2023 oottonoandypi</footer>
 
-    <audio>
-        <source src="sound/green.mp3">
-        <source src="sound/red.mp3">
-        <source src="sound/yellow.mp3">
-        <source src="sound/blue.mp3">
-        <source src="sound/wrong.mp3">
-    </audio>
+    <audio class="green"><source src="sound/green.mp3"></audio>
+    <audio class="red"><source src="sound/red.mp3"></audio>
+    <audio class="yellow"><source src="sound/yellow.mp3"></audio>
+    <audio class="blue"><source src="sound/blue.mp3"></audio>
+    <audio class="wrong"><source  src="sound/wrong.mp3"></audio>
+    
     <script src="https://code.jquery.com/jquery-3.6.4.min.js" integrity="sha256-oP6HI9z1XaZNBrJURtCoUT5SUnxFr8s3BzRl+cbzUq8=" crossorigin="anonymous"></script>
     <script src="js/index.js"></script>
+    <script src="js/SimonGame.js"></script>
 </body>

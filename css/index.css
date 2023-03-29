@@ -34,8 +34,13 @@ h2{
     padding: 16px 16px;
 }
 
+h2 em{
+    font-style: normal;
+}
+
 button{
     border: none;
+    font-family: 'Geo', sans-serif;
 }
 
 footer{
@@ -49,7 +54,7 @@ footer{
 #btns_container {
     position: relative;
     margin: 32px auto;
-    width: 22vw;
+    width: 32vw;
     aspect-ratio: 1/1;
     /*border-style: dashed;
     border-color: white;
@@ -96,6 +101,7 @@ footer{
     border-color: rgba(208, 177, 246, 0.437);
     border-width: 1px;
     border-style: solid;
+    position: relative;
 }
 
 .mybtn:hover{
@@ -116,5 +122,11 @@ footer{
         width: 95%;
         height: 95%;
         margin: 2.5% auto;
+    }
+  }
+
+  @media (max-width: 768px){
+    #btns_container{
+        width: 70vw;
     }
   }
